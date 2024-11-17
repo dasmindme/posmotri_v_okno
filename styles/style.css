@@ -9,13 +9,13 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -48,17 +48,17 @@ ol {
 
 .result__video-container {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 10px;
   width: 711px;
   height: 456px;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .result__video {
-  object-fit: cover;
-  object-position: center;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -69,23 +69,23 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  font-style: normal;
   line-height: 22px;
 }
 
 .content__details {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .title {
   padding-bottom: 26px;
   font-family: 'Oswald', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 75px;
+  font-style: normal;
   line-height: 70px;
   text-transform: uppercase;
 }
@@ -96,9 +96,9 @@ ol {
 
 .content__list {
   position: relative;
-  overflow: auto;
-  height: 298px;
   width: 399px;
+  height: 298px;
+  overflow: auto;
 }
 
 .content__list-item:not(:last-of-type) {
@@ -106,9 +106,9 @@ ol {
 }
 
 .content__card-link {
-  text-decoration: none;
   color: #FFFFFF;
   font-style: normal;
+  text-decoration: none;
 }
 
 .content__video-card {
@@ -138,11 +138,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
-
