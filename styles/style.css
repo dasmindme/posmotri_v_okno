@@ -11,7 +11,7 @@ html {
 .page {
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -37,23 +37,26 @@ ol {
   list-style: none;
 }
 
+/* Сделала весь контент на старинце через флекс*/
 .content {
   display: flex;
   justify-content: space-between;
   align-items: end;
   gap: 30px;
-  width: 1140px;
   margin: 133px 30px;
   padding-top: 2px;
 }
 
+/* Задала размеры и отпустпы для блока с видео */
+
 .result__video-container {
-  position: relative;
   width: 711px;
   height: 442px;
   padding-top: 40px;
   padding-bottom: 15px;
 }
+
+/* Растянула видео по всей ширине и высоте блока */
 
 .result__video {
   width: 100%;
@@ -62,30 +65,53 @@ ol {
   object-position: center;
 }
 
+/* Блок с поиском сделала через флекс */
+
 .search-form {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
-  height: 53px;
+  gap: 41px;
+  height: 52px;
 }
+
+/* Сбросила границы для поискового поля */
 
 .search-form__fieldset {
   border: 0;
 }
+
+/* Сделала блок с лейблами через флекс */
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+}
+
+/* Добавила курсор и почеркивание текста для состояния hover */
+
+.search-form__label:hover {
+  cursor: url("../images/image\ 52.svg"), auto;
+  text-decoration: underline;
+}
+
+/* Задала размеры для заголовка поисковой формы */
 
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 22px;
-  padding-bottom: 6px;
+  padding-bottom: 7px;
 }
+
+/* Для поисковой формы сбросила границы, чтобы сделать верхнюю и нижнюю */
 
 .search-form__textfield {
   appearance: none;
   background-color: transparent;
   border: 0;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -96,56 +122,46 @@ ol {
   border-bottom: 1px solid #fff;
 }
 
+/* Сбросила обводку для состояния фокус */
+
 .search-form__textfield:focus {
   outline: none;
 }
+
+/* Сбросила обводку для состояния при нажатии кнопки */
 
 .search-form__textfield:focus-visible {
   outline: none;
 }
 
-/*.search-form__label:has(.search-form__textfield:focus) {
-  outline: none;
-}*/
+/* Сбросила text-decoration для текстового поля в состоянии hover  */
 
 .search-form__label:has(.search-form__textfield:hover) {
   text-decoration: none;
 }
 
+/* Добавила обводку для текстового поля в активном состоянии  */
+
 .search-form__textfield:active {
   outline: 1px solid #fff;
 }
+
+/* Добавила обводку для всех объектов в форме поиска в состоянии  focus-visible */
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
+/* Сделала блок с чек-боксом через флекс  */
+
 .search-form__checkbox-list {
   display: flex;
   justify-content: start;
   gap: 15px;
-  width: 212px;
 }
 
-.search-form__label {
-  display: flex;
-  width: fit-content;
-  gap: 5px;
-}
-
-/*.search-form__label:focus {
-  outline: none;
-}
-
-.search-form__label:focus-visible {
-  outline: auto;
-}*/
-
-.search-form__label:hover {
-  cursor: url('../images/image\ 52.svg'), auto;
-  text-decoration: underline;
-}
+/* Скрыла дефолтный чек-бокс */
 
 .visually-hidden {
   position: absolute;
@@ -157,6 +173,8 @@ ol {
   white-space: nowrap;
 }
 
+/* Сделала псевдо чек-бокс через флекс и добавила границу */
+
 .search-form__pseudo-checkbox {
   display: flex;
   align-items: center;
@@ -167,14 +185,18 @@ ol {
   height: 19px;
 }
 
+/* Нарисовала сам чек-бокс */
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
-  content: '';
+  content: "";
   display: block;
-  width: 15px;
+  width: 16px;
   height: 16px;
   border: 1px solid #fff;
   background-color: #fff;
 }
+
+/* Шрифты для текста в лейблах */
 
 .search-form__label-text {
   font-style: normal;
@@ -183,21 +205,25 @@ ol {
   line-height: 22px;
 }
 
+/* Кнопку расположила снизу флекс контейнера */
+
 .search-form__submit-button {
-  width: 194px;
-  height: 34px;
   align-self: flex-end;
 }
+
+/* Растянула секцию с контентом по ширине и высоте */
 
 .content__details {
   width: 100%;
   height: 100%;
 }
 
+/* Шрифты и стили для заголовка */
+
 .title {
   display: inline-block;
   padding-bottom: 23px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -205,78 +231,93 @@ ol {
   text-transform: uppercase;
 }
 
+/* Цвет для части текста */
+
 .content__accent {
   color: #545050;
 }
 
+/* Задала ширину и высоту для блока со списком и сделала скроллбар */
+
 .content__list {
-  position: relative;
   overflow: auto;
   height: 298px;
   width: 400px;
-  /*scrollbar-color: #1b1919;
-  scrollbar-width: 1px;*/
 }
 
-/*.content__list::-webkit-scrollbar-track { 
-  background: #fff; } 
-
-.content__list::-webkit-scrollbar-thumb { 
-  background-color: #050c26; 
-  border-radius: 20px;  
-  border: 3px solid #050c26;
-} */
+/* Отступ между элементами списка кроме последнего */
 
 .content__list-item:not(:last-child) {
   padding-bottom: 30px;
 }
 
+/* Сделала ссылку блочной и задала цвет, стили и сбросила подчеркивание */
+
 .content__card-link {
   display: block;
-  color: #FFFFFF;
+  color: #ffffff;
   font-style: normal;
   text-decoration: none;
 }
+
+/* Цвет для выбранной карточки пользователем */
 
 .content__card-link_current {
   background: #545050;
 }
 
+/* Сброс оводки для ссылки в фокусе */
+
 .content__card-link:focus {
   outline: none;
 }
 
+/* Обводка для ссылки в состоянии focus-visible */
+
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
+  margin: 1px;
 }
 
+/* Курсор для ссылки в состоянии hover  и подчеркивание */
+
 .content__card-link:hover {
-  cursor: url('../images/image\ 52.svg'), auto;
+  cursor: url("../images/image\ 52.svg"), auto;
   text-decoration: underline;
 }
+
+/* Цвет ссылки в состоянии active */
 
 .content__card-link:active {
   background: #545050;
 }
+
+/* Контент внутри карточки с видео сделала флексом */
 
 .content__video-card {
   display: flex;
   justify-content: space-between;
 }
 
+/* Для заголовка внутри карточки задала шрифт и стили */
+
 .content__video-card-title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
+/* Для описания видео задала размеры шрифта */
+
 .content__video-card-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 16px;
 }
+
+/* Размеры и отступ для заставки видео */
 
 .content__video-card-thumbnail {
   width: 194px;
@@ -285,40 +326,51 @@ ol {
   padding: 2px;
 }
 
-.more-button {
-  display: block;
-  width: 100%;
+/* Для кнопки добавила внешний отпусп в 1px , чтобы отображалась обводка слева в состоянии focus-visible*/
+
+.more-button:focus-visible {
+  margin-left: 1px;
 }
+
+/* Шрифты, стили и граница для кнопок */
 
 .button {
   background-color: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   font-style: normal;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
-  width: 100%;
   font-size: 18px;
   height: 34px;
   line-height: 22px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
+  width: 100%;
 }
+
+/* Сброс обводки для кнопок в состоянии focus */
 
 .button:focus {
   outline: none;
 }
+
+/* Обводка для кнопок в состоянии focus-visible */
 
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
+/* Курсор для кнопок в состоянии hover */
+
 .button:hover {
-  cursor: url('../images/image\ 52.svg'), auto;
+  cursor: url("../images/image\ 52.svg"), auto;
   text-decoration: underline;
 }
 
+/* Обводка для кнопок в состоянии active */
+
 .button:active {
   background: #545050;
-  border: 1px solid #FFFFFF;
+  outline: 1px solid #ffffff;
 }
