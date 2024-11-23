@@ -50,6 +50,7 @@ ol {
 /* Задала размеры и отпустпы для блока с видео */
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 442px;
   padding-top: 40px;
@@ -240,6 +241,7 @@ ol {
 /* Задала ширину и высоту для блока со списком и сделала скроллбар */
 
 .content__list {
+  position: relative;
   overflow: auto;
   height: 298px;
   width: 400px;
