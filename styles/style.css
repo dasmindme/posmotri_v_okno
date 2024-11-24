@@ -86,42 +86,42 @@ ol {
 .search-form__label {
   display: flex;
   justify-content: center;
-  width: fit-content;
   gap: 5px;
+  width: fit-content;
 }
 
 /* Добавила курсор и почеркивание текста для состояния hover */
 
 .search-form__label:hover .search-form__label-text {
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Задала размеры для заголовка поисковой формы */
 
 .search-form__fieldset-title {
+  padding-bottom: 4px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 22px;
-  padding-bottom: 4px;
 }
 
 /* Для поисковой формы сбросила границы, чтобы сделать верхнюю и нижнюю */
 
 .search-form__textfield {
-  appearance: none;
-  background-color: transparent;
-  border: 0;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #fff;
   min-width: 225px;
+  border: 0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  background-color: transparent;
+  appearance: none;
 }
 
 /* Сбросила обводку для состояния фокус */
@@ -179,12 +179,12 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: 1px solid #fff;
-  border-radius: 0;
+  align-items: center;
   width: 19px;
   height: 19px;
+  border: 1px solid #fff;
+  border-radius: 0;
 }
 
 /* Нарисовала сам чек-бокс */
@@ -201,9 +201,9 @@ ol {
 /* Шрифты для текста в лейблах */
 
 .search-form__label-text {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  font-style: normal;
   line-height: 22px;
 }
 
@@ -243,9 +243,9 @@ ol {
 
 .content__list {
   position: relative;
-  overflow: auto;
-  height: 298px;
   width: 400px;
+  height: 298px;
+  overflow: auto;
 }
 
 /* Отступ между элементами списка кроме последнего */
@@ -278,15 +278,15 @@ ol {
 /* Обводка для ссылки в состоянии focus-visible */
 
 .content__card-link:focus-visible {
-  outline: 1px solid #fff;
   margin: 2px;
+  outline: 1px solid #fff;
 }
 
 /* Курсор для ссылки в состоянии hover  и подчеркивание */
 
 .content__card-link:hover {
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Цвет ссылки в состоянии active */
@@ -306,25 +306,25 @@ ol {
 /* Для заголовка внутри карточки задала шрифт и стили */
 
 .content__video-card-title {
+  max-width: 200px; 
+  overflow: hidden;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis; 
-  white-space: nowrap; 
-  overflow: hidden;
-  max-width: 200px;
+  white-space: nowrap;
 }
 
 /* Для описания видео задала размеры шрифта */
 
 .content__video-card-description {
+  max-width: 200px;
+  padding-top: 6px;
   font-weight: 400;
   font-size: 18px;
   line-height: 16px;
-  max-width: 200px;
-  padding-top: 6px;
 }
 
 /* Размеры и отступ для заставки видео */
@@ -332,9 +332,9 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  padding: 2px;
   object-fit: cover;
   object-position: center;
-  padding: 2px;
 }
 
 /* Для кнопки добавила внешний отпусп в 1px , чтобы отображалась обводка слева в состоянии focus-visible*/
@@ -346,17 +346,17 @@ ol {
 /* Шрифты, стили и граница для кнопок */
 
 .button {
-  background-color: transparent;
+  width: 100%;
+  height: 34px;
   border: 1px solid currentColor;
-  font-style: normal;
+  color: #ffffff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  height: 34px;
+  font-style: normal;
   line-height: 22px;
   text-align: center;
-  color: #ffffff;
-  width: 100%;
+  background-color: transparent;
 }
 
 /* Сброс обводки для кнопок в состоянии focus */
@@ -375,8 +375,8 @@ ol {
 /* Курсор для кнопок в состоянии hover */
 
 .button:hover {
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Обводка для кнопок в состоянии active */
