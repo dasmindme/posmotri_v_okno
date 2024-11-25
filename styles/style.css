@@ -86,6 +86,7 @@ ol {
 .search-form__label {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5px;
   width: fit-content;
 }
@@ -224,7 +225,7 @@ ol {
 
 .title {
   display: inline-block;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -251,7 +252,7 @@ ol {
 /* Отступ между элементами списка кроме последнего */
 
 .content__list-item:not(:last-child) {
-  padding-bottom: 30px;
+  padding-bottom: 33px;
 }
 
 /* Сделала ссылку блочной и задала цвет, стили и сбросила подчеркивание */
@@ -300,7 +301,6 @@ ol {
 .content__video-card {
   display: flex;
   justify-content: space-between;
-  padding-top: 4px;
 }
 
 /* Для заголовка внутри карточки задала шрифт и стили */
@@ -311,7 +311,7 @@ ol {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 36px;
   text-transform: uppercase;
   text-overflow: ellipsis; 
   white-space: nowrap;
@@ -321,7 +321,7 @@ ol {
 
 .content__video-card-description {
   max-width: 200px;
-  padding-top: 6px;
+  padding-top: 3px;
   font-weight: 400;
   font-size: 18px;
   line-height: 16px;
@@ -331,7 +331,7 @@ ol {
 
 .content__video-card-thumbnail {
   width: 194px;
-  height: 103px;
+  height: 105px;
   padding: 2px;
   object-fit: cover;
   object-position: center;
