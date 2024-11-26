@@ -306,7 +306,7 @@ ol {
 /* Для заголовка внутри карточки задала шрифт и стили */
 
 .content__video-card-title {
-  max-width: 200px; 
+  max-width: 197px; 
   overflow: hidden;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -337,10 +337,16 @@ ol {
   object-position: center;
 }
 
-/* Для кнопки добавила внешний отпусп в 1px , чтобы отображалась обводка слева в состоянии focus-visible*/
+/* Для кнопки добавила внешний отпусп в 1px и ограничила максимальную ширину, 
+чтобы отображалась обводка слева в состоянии focus-visible. Если удалить отступ
+то пропадает обводка. А свойства white-space: normal;  word-wrap: break-word; 
+для переноса текста, если текста в кнопки станет больше*/
 
 .more-button:focus-visible {
-  margin-left: 1px;
+  width: 380px;
+  margin: 1px;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 /* Шрифты, стили и граница для кнопок */
